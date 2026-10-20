@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-seal"
+version = "0.1.0"
+description = "Detect changes to engagement evidence using deterministic SHA-256 manifests."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+evidence-seal = "evidence_seal:main"
+
+[tool.setuptools]
+py-modules = ["evidence_seal"]
